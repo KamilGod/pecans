@@ -1,0 +1,325 @@
+html{
+    height:100%; 
+}
+
+body{
+    width:100%;
+    background:#fff ;
+    box-sizing: border-box;
+    height:100%; 
+    
+}
+header{
+    background: url("../img/splash.jpg") center/cover no-repeat ;
+    height:100%;    
+    position:relative;
+}
+header div { 
+    margin:0 auto;
+}
+
+header:before{
+    content: '';
+    background: #000;
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    opacity: 0.4;
+}
+
+.logo{
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    width:360px;
+    text-align: center;    
+}
+
+.logo img{
+    display: block; 
+}
+
+.logo a{   
+    display: inline-block;
+    padding: 10px 25px;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 2px solid white;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 20px;
+    transition: .3s all ease-in-out;
+    margin-top:50px;
+}
+
+.logo a::before{
+    background: #000;
+    z-index: 1;
+    position:absolute
+}
+.logo a:hover {
+    padding: 10px 32px;
+    text-align: center;
+    border-radius:5px;
+    background: rgba(0,0,0,0.5);  
+}
+
+nav{
+   
+   text-align: center;
+    width:100%;
+    padding:30px 0;
+    border-bottom: 2px solid #303030;
+    
+    
+}
+
+
+ nav a{
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: 'saira condensed', serif;
+    font-size: 15px;
+    margin:0 15px;
+vertical-align: middle;
+color:#000;
+display: inline-block;
+padding-bottom: 5px;
+}
+
+
+nav a:not(.logonav):hover {
+    border-bottom:1px dotted #303030; 
+}
+main{
+width:940px;
+margin: 0 auto;
+}
+
+
+section{
+   
+    padding-top:50px 0;
+
+}
+
+.product h2{
+    text-transform: uppercase;
+    font-family: 'Saira condensed', serif;
+    text-align: center;
+}
+.product h3{
+    font-family: 'Cormorant Garamond', serif;
+font-style:italic;
+    text-align: center;
+ }
+
+.product{
+    text-align: center;
+    height:650px;
+}
+
+.prods{
+    margin-top:50px;
+    width:100%;
+    
+
+}
+.prods div{
+    display: inline-block;
+    text-align: center;
+
+
+}
+.prods  img{
+    width:300px;
+    height:300px; 
+    display: block;   
+    margin-bottom:20px; 
+}
+.prods div+div{
+    margin-left:15px;
+}
+
+.prods a {
+   
+   font-family: 'Cormorant garamond', Times, serif;
+   text-decoration: none;
+   color:#000;
+   font-weight: normal;
+}
+
+.prods span{
+    font-weight: bold;
+    font-size: 20px;
+    font-style: normal;
+    color:#000;
+}
+
+.linetxt{
+    background-image: url("../img/bar-promo.jpg");
+    width:940px;
+    height:63px;
+    position: absolute;
+    background-repeat: no-repeat;
+    margin-top:50px;
+    text-align: left;
+    font-style: normal;
+    font-weight: normal;
+    font-family: 'Saira condensed', serif;
+}
+
+.linetxt span{
+    float:right;
+    display: inline-block;
+}
+
+.story{
+   text-align: center;
+    padding: 0 150px;
+    line-height: 30px;
+    font-size: 21px;
+}
+
+.story h2{
+    text-transform: uppercase;
+    font-family: 'Saira condensed', serif;
+    text-align: center;
+    font-size: 25px;
+}
+
+.story p{
+    font-family: 'Cormorant garamond', Times, serif;
+    font-weight: 400;
+}
+
+.slider{
+    background-image: url("../img/image-04.jpg");
+    height: 565px;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.slider-box{
+    position: absolute;
+    width:330px;
+    height: 180px;
+    background-color: #fff;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.slider-box::before{
+    content: "";
+    border: 2px solid #000000;
+    position: absolute;
+    top:5px;
+    left:5px;
+    right:5px;
+    bottom:5px;
+    z-index: -1;
+}
+
+footer{
+    width:940px;
+   text-align: center;
+    margin:0 auto;
+}
+
+.footer-contact{
+    background-image: url("../img/bar-footer.jpg");
+    height: 152px;
+    padding-top:15px;
+    background-repeat: no-repeat;
+}
+.footer-contact > div{
+float:left;
+width:calc(100%/3);
+}
+
+.footer-contact::after{
+content: "";
+display: block;
+clear: both;
+}
+
+.footer-contact h3{
+    text-transform: uppercase;
+    font-family: 'Saira condensed', serif;
+}
+
+.we-cater a{
+    text-decoration: none;
+    color: #000;
+    font-style: italic;
+
+}
+
+.contact a{
+font-style: italic;
+text-decoration: none;
+color: #000;
+}
+
+.connect a{
+    background-image: url("../img/icons-social.jpg");
+    height:22px;
+    display: inline-block;
+    margin:0 5px;
+}
+
+.facebook{
+  width:12px;  
+}
+
+.instagram{
+    width:21px;
+    background-position-x: -12px;
+}
+
+.nav-footer{
+   text-align: center;
+   padding-top:20px;
+  margin-bottom: 30px;
+}
+.nav-footer a{
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 13px;
+    margin:0 5px;
+vertical-align: middle;
+color:#000;
+display: inline-block;
+padding-bottom: 5px;
+
+
+}
+
+
+.nav-footer a:not(.logonavi):hover {
+    border-bottom:1px dotted #303030; 
+}
+
+
+small, img {
+    vertical-align: middle;
+    text-align: right;
+}
+.copyr{
+    display: inline-block;
+
+}
+
+.nav-footer a+a::before{
+    content: "•";
+    margin-right:10px;
+}
+
+
+
